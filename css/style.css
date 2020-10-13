@@ -1,0 +1,286 @@
+/***********************************************
+* Meow App 8.0 Theme ...in progress, forever :P
+* Main Stylesheet
+*
+* @author Rochelle Lewis rlewis37@cnm.edu
+************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Shade&&family=Roboto:ital,wght@0,400;0,900;1,400;1,900&family=Press+Start+2P&display=swap');
+
+/* some classic krylon spraypaint color variables for our meow theme :D */
+:root {
+	--krylon-watermelon: #ff2667; /* #d23b68 */
+	--krylon-seafoam: #9AD7DB;
+	--krylon-sun-yellow: #F9D71C;
+	--krylon-global-blue: #4352B0;
+	--krylon-rich-plum: #7A0569;
+	--krylon-purple: #2E1745;
+}
+
+/***********************************************
+* AUTHOR UTILITY CLASSES
+************************************************/
+/**
+* .mh-100 is a bootstrap class that we've modified/boosted here for this layout.
+* See: https://getbootstrap.com/docs/4.5/utilities/sizing/#relative-to-the-parent
+**/
+.mh-100 {
+	min-height: 100vh;
+}
+
+.bg-dark-50 {
+	background-color: rgba(0,0,0,0.5) !important;
+}
+
+.bg-black {
+	background-color: #000;
+}
+
+.color-krylon-watermelon {
+	color: var(--krylon-watermelon) !important;
+}
+.color-krylon-seafoam {
+	color: var(--krylon-seafoam) !important;
+}
+.color-krylon-sun-yellow {
+	color: var(--krylon-sun-yellow) !important;
+}
+.color-krylon-global-blue {
+	color: var(--krylon-global-blue) !important;
+}
+.color-krylon-rich-plum {
+	color: var(--krylon-rich-plum) !important;
+}
+.color-krylon-purple {
+	color: var(--krylon-purple) !important;
+}
+
+.font-bungee-shade {
+	font-family: 'Bungee Shade', 'Roboto', sans-serif;
+}
+
+.font-press-start {
+	font-family: 'Press Start 2P', Courier, monospace;
+}
+
+/* this is preferable to bootstrap's out of date word-wrap class */
+.break-word {
+	word-break: break-word;
+	word-wrap: break-word;
+}
+
+.small-75 {
+	font-size: 75% !important;
+}
+
+/* sets position: fixed on md breakpoint */
+@media screen and (min-width: 768px) {
+	.position-fixed-md {
+		position: fixed;
+	}
+}
+
+/***********************************************
+* MEOW APP CUSTOM THEME STYLES
+************************************************/
+
+/* apply background image and fallback color here */
+html {
+	background: url("../img/nyan-cat.jpg") no-repeat top right fixed #000;
+	background-size: cover;
+}
+
+body {
+	background-color: transparent;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* only hard edges here */
+button,
+a.btn,
+.card,
+.badge,
+.modal-content,
+.form-control,
+.input-group-text,
+.alert,
+.jumbotron,
+.dropdown-menu {
+	border-radius: 0 !important;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+.navbar-brand {
+	font-family: 'Audiowide', monospace, sans-serif;
+}
+
+/* border color for our dark cards */
+div.card.border,
+div.card-footer,
+div.card-header,
+div.card-body {
+	border-color: rgba(255,255,255, 0.125) !important;
+}
+
+div.alert {
+	word-break: break-word;
+	word-wrap: break-word;
+}
+
+/***********************************************
+* CUSTOM MEOW BUTTONS
+************************************************/
+/* we actually gotta set this for react bootstrap? huh. */
+button {
+	cursor: pointer;
+}
+
+/* no pointer on disabled buttons! */
+button:disabled {
+	cursor: unset;
+}
+
+/* remove persistent box shadow on pesky button focus state */
+.btn:focus, .btn.focus,
+.btn-outline-danger:focus, .btn-outline-danger.focus,
+.btn-outline-danger:not(:disabled):not(.disabled).active:focus,
+.btn-outline-danger:focus, .btn-outline-danger.focus {
+	box-shadow: none;
+}
+
+/* outline seafoam */
+.btn-outline-seafoam {
+	color: var(--krylon-seafoam);
+	border-color: var(--krylon-seafoam);
+}
+
+.btn-outline-seafoam:not(:disabled):not(.disabled):active,
+.btn-outline-seafoam:not(:disabled):not(.disabled).active,
+.btn-outline-seafoam:hover {
+	background-color: var(--krylon-seafoam);
+	border-color: var(--krylon-seafoam);
+	color: #000;
+}
+
+/* solid seafoam */
+.btn-seafoam {
+	background-color: var(--krylon-seafoam);
+	color: #000;
+	border-color: var(--krylon-seafoam);
+}
+
+.btn-seafoam:active,
+.btn-seafoam:not(:disabled):not(.disabled):active {
+	color: #212529;
+	background-color: #dae0e5;
+	border-color: #d3d9df;
+}
+
+.btn-seafoam:active:focus,
+.btn-seafoam:not(:disabled):not(.disabled):active:focus {
+	box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+
+/* outline sun yellow */
+.btn-outline-sun-yellow {
+	color: var(--krylon-sun-yellow);
+	border-color: var(--krylon-sun-yellow);
+}
+
+.btn-outline-sun-yellow:not(:disabled):not(.disabled):active,
+.btn-outline-sun-yellow:not(:disabled):not(.disabled).active,
+.btn-outline-sun-yellow:hover {
+	background-color: var(--krylon-sun-yellow);
+	border-color: var(--krylon-sun-yellow);
+	color: #000;
+}
+
+/* outline watermelon */
+.btn-outline-watermelon,
+.btn-outline-watermelon:disabled {
+	color: var(--krylon-watermelon);
+	border-color: var(--krylon-watermelon);
+}
+
+.btn-outline-watermelon:not(:disabled):not(.disabled):active,
+.btn-outline-watermelon:not(:disabled):not(.disabled).active,
+.btn-outline-watermelon:not(:disabled):hover {
+	background-color: var(--krylon-watermelon);
+	border-color: var(--krylon-watermelon);
+	color: #fff;
+}
+
+/***********************************************
+* DARK THEME SCROLLBAR!
+* Author: @subfauna
+* See: https://codepen.io/subfauna/pen/CLtmF
+************************************************/
+html {
+	scrollbar-face-color: #646464;
+	scrollbar-base-color: #646464;
+	scrollbar-3dlight-color: #646464;
+	scrollbar-highlight-color: #646464;
+	scrollbar-track-color: #000;
+	scrollbar-arrow-color: #000;
+	scrollbar-shadow-color: #646464;
+}
+
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #646464;}
+::-webkit-scrollbar-track-piece { background-color: #000;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #646464;}
+::-webkit-resizer { background-color: #666;}
+
+/***********************************************
+* WELCOME SECTION
+************************************************/
+#welcome .inner-wrap {
+	border: 10px solid;
+	border-color: var(--krylon-sun-yellow);
+}
+
+#welcome p.lead {
+	/*text-transform: uppercase;*/
+	font-weight: 900;
+}
+
+@media only screen and (min-width: 998px) {
+	#welcome h1 {
+		font-size: 5rem;
+	}
+
+	#welcome .jumbotron .col-lg-4 {
+		justify-content: flex-end;
+	}
+}
+/***********************************************
+* ABOUT ME SECTION
+************************************************/
+
+/***********************************************
+* SKILLS SECTION
+************************************************/
+#technical-skills {
+	background-color: var(--krylon-watermelon);
+}
+
+/***********************************************
+* CONTACT ME SECTION
+************************************************/
+#contact-me {
+	background-color: rgba(255,255,255, 0.8);
+	color: #000;
+}
+
+/***********************************************
+* FOOTER
+************************************************/
+#footer {
+	background-color: var(--krylon-sun-yellow);
+	color: #000;
+}
