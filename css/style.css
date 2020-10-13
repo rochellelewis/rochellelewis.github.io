@@ -284,3 +284,10 @@ html {
 	background-color: var(--krylon-sun-yellow);
 	color: #000;
 }
+
+/***********************************************
+* FONTAWESOME
+************************************************/
+i.fa-2x {
+	font-size: 1.5rem;
+}
