@@ -8,12 +8,12 @@
 
 /* some classic krylon spraypaint color variables for our meow theme :D */
 :root {
-	--krylon-watermelon: #FF2667; /* #d23b68 */
-	--krylon-seafoam: #9AD7DB;
-	--krylon-sun-yellow: #F9D71C;
-	--krylon-global-blue: #4352B0;
-	--krylon-rich-plum: #7A0569;
-	--krylon-purple: #2E1745;
+	--krylon-watermelon: rgb(255, 38, 103); /* #d23b68 */
+	--krylon-seafoam: rgb(154, 215, 219);
+	--krylon-sun-yellow: rgb(249, 215, 28);
+	--krylon-global-blue: rgb(67, 82, 176);
+	--krylon-rich-plum: rgb(122, 5, 105);
+	--krylon-purple: rgb(46, 23, 69);
 }
 
 /***********************************************
@@ -94,6 +94,17 @@ body {
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 }
+ a,
+ a:link,
+ a:visited,
+ a:hover,
+ a:active {
+	 -webkit-transition: all 250ms ease-in-out;
+	 -moz-transition: all 250ms ease-in-out;
+	 -ms-transition: all 250ms ease-in-out;
+	 -o-transition: all 250ms ease-in-out;
+	 transition: all 250ms ease-in-out;
+ }
 
 /* only hard edges here */
 button,
@@ -270,6 +281,14 @@ html {
 /***********************************************
 * NAVBAR
 ************************************************/
+.navbar-dark .navbar-nav .nav-link {
+	color: var(--krylon-seafoam);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: hsl(184, 47%, 90%);
+}
 
 /***********************************************
 * WELCOME SECTION
@@ -356,7 +375,6 @@ html {
 #footer {
 	background-color: var(--krylon-sun-yellow);
 	color: #000;
-	text-shadow: 2px 2px #fff;
 }
 
 /***********************************************
