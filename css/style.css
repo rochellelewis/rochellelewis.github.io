@@ -8,7 +8,7 @@
 
 /* some classic krylon spraypaint color variables for our meow theme :D */
 :root {
-	--krylon-watermelon: #ff2667; /* #d23b68 */
+	--krylon-watermelon: #FF2667; /* #d23b68 */
 	--krylon-seafoam: #9AD7DB;
 	--krylon-sun-yellow: #F9D71C;
 	--krylon-global-blue: #4352B0;
@@ -210,7 +210,27 @@ button:disabled {
 .btn-outline-watermelon:not(:disabled):hover {
 	background-color: var(--krylon-watermelon);
 	border-color: var(--krylon-watermelon);
-	color: #fff;
+	color: #fff !important;
+}
+
+/* solid watermelon */
+.btn-watermelon {
+	background-color: var(--krylon-watermelon);
+	color: #fff !important;
+	border-color: var(--krylon-watermelon);
+}
+
+.btn-watermelon:active,
+.btn-watermelon:not(:disabled):not(.disabled):active,
+.btn-watermelon:not(:disabled):hover {
+	color: #fff !important;
+	background-color: var(--krylon-rich-plum);
+	border-color: var(--krylon-rich-plum);
+}
+
+.btn-watermelon:active:focus,
+.btn-watermelon:not(:disabled):not(.disabled):active:focus {
+	box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5) !important;
 }
 
 /***********************************************
@@ -235,6 +255,21 @@ html {
 ::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
 ::-webkit-scrollbar-corner { background-color: #646464;}
 ::-webkit-resizer { background-color: #666;}
+
+/***********************************************
+* LAYOUT
+************************************************/
+@media only screen and (min-width: 998px) {
+	section#about-me,
+	section#projects,
+	section#contact-me {
+		padding: 8rem 0 !important;
+	}
+}
+
+/***********************************************
+* NAVBAR
+************************************************/
 
 /***********************************************
 * WELCOME SECTION
@@ -262,19 +297,57 @@ html {
 * ABOUT ME SECTION
 ************************************************/
 
+@media only screen and (min-width: 768px) {
+	#about-me h2 {
+		font-size: 3.5rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#about-me h2 {
+		font-size: 4rem;
+	}
+}
+
 /***********************************************
 * SKILLS SECTION
 ************************************************/
 #technical-skills {
-	background-color: var(--krylon-watermelon);
+	background-color: var(--krylon-purple);
 }
 
+#technical-skills h3 {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	margin-bottom: 1.5rem;
+	padding-bottom: 1rem;
+	text-shadow: 2px 2px var(--krylon-watermelon);
+}
+
+#technical-skills .border {
+	border-color: rgba(255,255,255,0.2) !important;
+}
 /***********************************************
 * CONTACT ME SECTION
 ************************************************/
 #contact-me {
-	background-color: rgba(255,255,255, 0.8);
+	background-color: rgba(255,255,255, 0.85);
 	color: #000;
+}
+
+#contact-me .border {
+	border: 10px solid var(--krylon-watermelon) !important;
+}
+
+@media only screen and (min-width: 768px) {
+	section#contact-me h3 {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	section#contact-me h3 {
+		font-size: 4rem;
+	}
 }
 
 /***********************************************
@@ -283,6 +356,7 @@ html {
 #footer {
 	background-color: var(--krylon-sun-yellow);
 	color: #000;
+	text-shadow: 2px 2px #fff;
 }
 
 /***********************************************

@@ -78,16 +78,14 @@
 		<!-- welcome -->
 		<section id="welcome" class="mh-100 d-flex align-items-center">
 			<div class="container d-flex justify-content-center">
-				<div class="col-12">
-					<div class="jumbotron my-5 bg-dark-50 px-5">
-						<div class="inner-wrap p-5">
-							<div class="row">
-								<div class="col-lg-8">
-									<h1 class="font-bungee-shade color-krylon-sun-yellow break-word">Rochelle Lewis</h1>
-								</div>
-								<div class="col-lg-4 d-flex align-items-end">
-									<p class="lead mb-0 text-right text-uppercase">Web Developer! Yay! :D</p>
-								</div>
+				<div class="jumbotron my-5 bg-dark-50 px-5">
+					<div class="inner-wrap p-5">
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="font-bungee-shade color-krylon-sun-yellow break-word">Rochelle Lewis</h1>
+							</div>
+							<div class="col-lg-4 d-flex align-items-end">
+								<p class="lead mb-0 text-right text-uppercase">Web Developer! Yay! :D</p>
 							</div>
 						</div>
 					</div>
@@ -99,11 +97,14 @@
 		<section id="about-me" class="bg-dark-50 py-5">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 col-lg-4">
-						<h3>About Me</h3>
+					<div class="col-md-6 col-lg-4 col-lg-4 mb-3">
+						<div class="h-100 p-4 border text-center text-md-left">
+							<h2 class="mb-0 font-bungee-shade">About Me</h2>
+						</div>
 					</div>
 					<div class="col-md-6 col-lg-8">
-						<p>content here</p>
+						<p class="text-justify">Hi! I’m a web developer and coding bootcamp educator who builds beautiful, accessible, and secure websites and applications with a focus on User Interfaces and APIs. I approach web development as an exploration of the convergence of User Experience, Interaction Design, software architecture and programmatic knowhow.</p>
+						<p class="text-justify">I'm a supporter of quality, top-tier environments that thrive on innovation, community, curiosity and joy. Relationships are an intentional practice. Everyone should feel really good about the work that they do. People > products, all day everyday.</p>
 					</div>
 				</div>
 			</div>
@@ -111,10 +112,67 @@
 
 		<!-- tech -->
 		<section id="technical-skills" class="py-5">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-12">
-						<h3>Skills</h3>
+					<div class="col-md-6 col-lg-2 mb-4">
+						<div class="border p-4 h-100">
+							<h3 class="text-center">Tools</h3>
+							<div class="row">
+								<div class="col-6 col-lg-12">
+									<ul class="list-unstyled mb-0">
+										<li>HTML &amp; CSS</li>
+										<li>JavaScript</li>
+										<li>PHP</li>
+										<li>MySQL</li>
+										<li>Git &amp; GitHub</li>
+										<li>Ubuntu Linux</li>
+									</ul>
+								</div>
+								<div class="col-6 col-lg-12">
+									<ul class="list-unstyled mb-0">
+										<li>React</li>
+										<li>Redux</li>
+										<li>Docker</li>
+										<li>Express.js</li>
+										<li>REST APIs</li>
+										<li>WordPress</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-5 mb-4">
+						<div class="border p-4 h-100">
+							<h3 class="text-center">Skills</h3>
+							<ul>
+								<li>Asynchronous &amp; Remote Collaboration</li>
+								<li>Object Oriented Programming</li>
+								<li>Unit Testing &amp; Test Driven Development</li>
+								<li>Agile Project Management Methods</li>
+								<li>Gitflow &amp; Ticket Driven Development</li>
+								<li>Web Development Education &amp; Training</li>
+								<li>Data Modeling &amp; Entity Relationship Diagrams</li>
+								<li>UX/UI: User Experience &amp; User Interface Design</li>
+								<li>Web Application Security</li>
+								<li>Technical Writing</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-5 mb-4">
+						<div class="border p-4 h-100">
+							<h3 class="text-center">Working Values</h3>
+							<div class="row">
+								<ul>
+									<li>Security is not a "feature"</li>
+									<li>Dieter Rams 10 Principles for Good Design</li>
+									<li>Accountability, collaboration, and transparency foster trust.</li>
+									<li>"Autonomy is the antithesis of micromanagement" - Joan F. Cheverie</li>
+									<li>"Good communication is the bridge between confusion and clarity" - Nat Turner</li>
+									<li>💖 Style guides, official docs &amp; best practices.</li>
+									<li>Clean, clear, well commented code is lit 🔥</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -122,10 +180,11 @@
 
 		<!-- projects -->
 		<section id="projects" class="py-5">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12">
 						<h3>Projects</h3>
+						<p>Coming Soon!</p>
 					</div>
 				</div>
 			</div>
@@ -135,15 +194,60 @@
 		<section id="contact-me" class="py-5">
 			<div class="container">
 				<div class="row">
-					<div class="col">
-						<h3>DM Me</h3>
+					<div class="col-md-8 offset-md-2">
+						<div class="border p-5">
+							<h3 class="text-center mb-5 font-bungee-shade">Get In Touch</h3>
+							<form id="contact-form" action="https://formspree.io/f/xzbkernj" method="post">
+								<div class="form-group">
+									<label class="sr-only" for="contactName">Name <span class="text-danger">*</span></label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+										<span class="input-group-text">
+											<i class="fas fa-user" aria-hidden="true"></i>
+										</span>
+										</div>
+										<input type="text" class="form-control" id="contactName" name="contactName" placeholder="Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="sr-only" for="contactEmail">Email <span class="text-danger">*</span></label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+										<span class="input-group-text">
+											<i class="fas fa-envelope" aria-hidden="true"></i>
+										</span>
+										</div>
+										<input type="email" class="form-control" id="contactEmail" name="_replyto" placeholder="Email">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="sr-only" for="contactSubject">Subject</label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+										<span class="input-group-text">
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</span>
+										</div>
+										<input type="text" class="form-control" id="contactSubject" name="contactSubject" placeholder="Subject">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="sr-only" for="contactMessage">Message <span class="text-danger">*</span></label>
+									<div class="input-group">
+										<div class="input-group-prepend">
+										<span class="input-group-text">
+											<i class="fas fa-comment" aria-hidden="true"></i>
+										</span>
+										</div>
+										<textarea class="form-control" rows="5" id="contactMessage" name="contactMessage" placeholder="Your Message Here (2000 characters max)"></textarea>
+									</div>
+								</div>
+								<button class="btn btn-watermelon" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+								<button class="btn btn-secondary" type="reset"><i class="fas fa-ban"></i> Reset</button>
+							</form>
+						</div><!--/.border-->
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-lg-4">
-						contact form here
-					</div>
-				</div>
+				</div><!--/.row-->
 			</div>
 		</section>
 
@@ -152,8 +256,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 text-center">
-						<h4 class="font-press-start">Footer Lead</h4>
-						<div>footer byline text</div>
+						<div class="font-press-start text-uppercase">Thank You! Come Again!</div>
+<!--						<small class="mb-0">&copy; 2020</small>-->
 					</div>
 				</div>
 			</div>
