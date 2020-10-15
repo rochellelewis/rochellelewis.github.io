@@ -298,6 +298,16 @@ html {
 	color: hsl(184, 100%, 95%);
 }
 
+/* keep social icons expanded */
+.navbar-expand-sm ul.navbar-nav.social-icons {
+	flex-direction: row !important;
+}
+
+.navbar-expand-sm ul.navbar-nav.social-icons .nav-link {
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+}
+
 /***********************************************
 * WELCOME SECTION
 ************************************************/
