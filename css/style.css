@@ -8,12 +8,12 @@
 
 /* some classic krylon spraypaint color variables for our meow theme :D */
 :root {
-	--krylon-watermelon: rgb(255, 38, 103); /* #d23b68 */
-	--krylon-seafoam: rgb(154, 215, 219);
-	--krylon-sun-yellow: rgb(249, 215, 28);
-	--krylon-global-blue: rgb(67, 82, 176);
-	--krylon-rich-plum: rgb(122, 5, 105);
-	--krylon-purple: rgb(46, 23, 69);
+	--krylon-watermelon: hsl(342, 100%, 57%); /*rgb(255, 38, 103)*/
+	--krylon-seafoam: hsl(184, 47%, 73%); /*rgb(154, 215, 219)*/
+	--krylon-sun-yellow: hsl(51, 95%, 54%); /*rgb(249, 215, 28)*/
+	--krylon-global-blue: hsl(232, 45%, 48%); /*rgb(67, 82, 176)*/
+	--krylon-rich-plum: hsl(309, 92%, 25%); /*rgb(122, 5, 105)*/
+	--krylon-purple: hsl(270, 50%, 18%) /*rgb(46, 23, 69)*/
 }
 
 /***********************************************
