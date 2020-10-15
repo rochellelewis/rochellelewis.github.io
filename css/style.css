@@ -141,6 +141,12 @@ div.alert {
 	word-wrap: break-word;
 }
 
+/* custom light border */
+.border-light {
+	border: 1px solid;
+	border-color: rgba(255,255,255,0.2) !important;
+}
+
 /***********************************************
 * CUSTOM MEOW BUTTONS
 ************************************************/
@@ -235,8 +241,8 @@ button:disabled {
 .btn-watermelon:not(:disabled):not(.disabled):active,
 .btn-watermelon:not(:disabled):hover {
 	color: #fff !important;
-	background-color: var(--krylon-rich-plum);
-	border-color: var(--krylon-rich-plum);
+	background-color: hsl(342, 60%, 45%);
+	border-color: hsl(342, 40%, 45%);
 }
 
 .btn-watermelon:active:focus,
@@ -274,7 +280,7 @@ html {
 	section#about-me,
 	section#projects,
 	section#contact-me {
-		padding: 8rem 0 !important;
+		padding: 10rem 0 9rem 0 !important;
 	}
 }
 
@@ -283,11 +289,13 @@ html {
 ************************************************/
 .navbar-dark .navbar-nav .nav-link {
 	color: var(--krylon-seafoam);
+	font-weight: 900;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover {
-	color: hsl(184, 47%, 90%);
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+	color: hsl(184, 100%, 95%);
 }
 
 /***********************************************
@@ -342,9 +350,16 @@ html {
 	text-shadow: 2px 2px var(--krylon-watermelon);
 }
 
-#technical-skills .border {
-	border-color: rgba(255,255,255,0.2) !important;
+/***********************************************
+* PROJECTS SECTION
+************************************************/
+#projects h3 {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	margin-bottom: 1.5rem;
+	padding-bottom: 1rem;
+	text-shadow: 2px 2px var(--krylon-rich-plum);
 }
+
 /***********************************************
 * CONTACT ME SECTION
 ************************************************/
@@ -355,6 +370,17 @@ html {
 
 #contact-me .border {
 	border: 10px solid var(--krylon-watermelon) !important;
+}
+
+#contact-me .form-control {
+	color: #000;
+	border-color: #000;
+}
+
+#contact-me .input-group-text {
+	color: #fff;
+	background-color: #000;
+	border-color: #000;
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -16,15 +15,23 @@
 		<!-- fontawesome -->
 		<script src="https://kit.fontawesome.com/db382e693f.js" crossorigin="anonymous"></script>
 
+		<!-- devicon -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
 		<!-- author styles -->
 		<link rel="stylesheet" href="css/style.css">
 
 		<!-- recaptcha -->
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+		<!-- iconify -->
+		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
 		<title>Rochelle Lewis | Web Developer</title>
 	</head>
 	<body id="home" data-spy="scroll" data-target="#main-nav" data-offset="120">
 
+		<!-- navigation -->
 		<header>
 			<nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,25 +111,26 @@
 		<section id="about-me" class="bg-dark-50 py-5">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 col-lg-4 col-lg-4 mb-3">
+					<div class="col-md-6 col-lg-4 mb-3">
 						<div class="h-100 p-4 border text-center text-md-left">
 							<h2 class="mb-0 font-bungee-shade">About Me</h2>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-8">
-						<p class="text-justify">Hi! I’m a web developer and coding bootcamp educator who builds beautiful, accessible, and secure websites and applications with a focus on User Interfaces and APIs. I approach web development as an exploration of the convergence of User Experience, Interaction Design, software architecture and programmatic knowhow.</p>
-						<p class="text-justify">I'm a supporter of quality, top-tier environments that thrive on innovation, community, curiosity and joy. Relationships are an intentional practice - between team members and users and their tech. Everyone should feel really good about the work that they do. People > products, all day everyday.</p>
+					<div class="col-md-6 col-lg-7 offset-lg-1">
+						<p class="text-justify">Hi! I’m a web developer and coding bootcamp instructor who builds beautiful, accessible, and secure websites and applications with a focus on User Interfaces and APIs. I approach web development as an exploration of the convergence of User Experience, Interaction Design, software architecture and programmatic knowhow.</p>
+						<p class="text-justify">I'm a supporter of quality, top-tier environments that thrive on innovation, community, curiosity and joy. I believe relationships are an intentional practice, and in this field that means mindfulness regarding the relationships between team members, end users and tech is key. Everyone should feel really good about the work that they do.</p>
+						<p>People > products, all day everyday.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- tech -->
-		<section id="technical-skills" class="py-5">
+		<section id="technical-skills" class="pt-5 pb-4">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6 col-lg-3 mb-4">
-						<div class="border p-4 h-100">
+						<div class="border-light p-4 h-100">
 							<h3 class="text-center">Tools</h3>
 							<div class="row">
 								<div class="col-6 col-lg-12">
@@ -149,7 +157,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-4 mb-4">
-						<div class="border p-4 h-100">
+						<div class="border-light p-4 h-100">
 							<h3 class="text-center">Skills</h3>
 							<ul>
 								<li>Asynchronous &amp; Remote Collaboration</li>
@@ -166,7 +174,7 @@
 						</div>
 					</div>
 					<div class="col-lg-5 mb-4">
-						<div class="border p-4 h-100">
+						<div class="border-light p-4 h-100">
 							<h3 class="text-center">Working Values</h3>
 							<div class="row">
 								<ul>
@@ -189,9 +197,36 @@
 		<section id="projects" class="py-5">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-12">
-						<h3>Projects</h3>
-						<p>Coming Soon!</p>
+					<div class="col-md-6 col-lg-5 mb-4">
+						<div class="bg-dark-50  p-4 h-100">
+							<h3>Recent Projects</h3>
+							<p>This project began as an example codebase for <a class="color-krylon-sun-yellow" href="https://deepdivecoding.com/fullstack/" target="_blank">Deep Dive Fullstack Bootcamp</a> students - a fully functional, secure, end-to-end simple CRUD application using the class curriculum and tech stack. It's been completely rewritten no less than three times, and refactored about eight times since 2015. 🙀 I've grown somewhat attached, and I still like to play with it. Sign up today! <a class="color-krylon-sun-yellow" href="https://octomeow.site" target="_blank">https://octomeow.site</a></p>
+							<p><a class="color-krylon-sun-yellow" href="https://github.com/rochellelewis/creepy-octo-meow-js" target="_blank"><i class="fa fa-github-square"></i> View on GitHub </a></p>
+						</div>
+
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="p-4 h-100  bg-dark-50">
+							<h3>octomeow.site</h3>
+							<a class="d-block" href="https://octomeow.site" target="_blank">
+								<img class="d-block img-fluid mx-auto" src="img/octomeow.jpg" alt="octomeow.site" />
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 mb-4">
+						<div class=" p-4 h-100 bg-dark-50">
+							<h3>Tech</h3>
+							<ul class="list-unstyled mb-0">
+								<li><span class="iconify" data-icon="cib:react"></span>&nbsp;&nbsp;React</li>
+								<li><span class="iconify" data-icon="cib:redux"></span>&nbsp;&nbsp;Redux</li>
+								<li><i class="devicon-express-original"></i>&nbsp;&nbsp;Express</li>
+								<li><span class="iconify" data-icon="cib:typescript"></span>&nbsp;&nbsp;TypeScript</li>
+								<li><span class="iconify" data-icon="cib:bootstrap"></span>&nbsp;&nbsp;React Bootstrap</li>
+								<li><span class="iconify" data-icon="grommet-icons:mysql"></span>&nbsp;&nbsp;MySQL</li>
+								<li><i class="devicon-docker-plain"></i>&nbsp;&nbsp;Docker</li>
+								<li><span class="iconify" data-icon="cib:nginx"></span>&nbsp;&nbsp;Nginx</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -265,14 +300,11 @@
 				<div class="row">
 					<div class="col-12 text-center">
 						<div class="font-press-start text-uppercase">☆*:⊹ ᕕ( ՞ ᗜ ՞ )ᕗ ⊹:*☆</div>
-<!--						<small class="mb-0">&copy; 2020</small>-->
 					</div>
 				</div>
 			</div>
 		</footer>
 
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
