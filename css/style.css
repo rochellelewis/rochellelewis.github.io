@@ -370,6 +370,12 @@ html {
 	text-shadow: 2px 2px var(--krylon-rich-plum);
 }
 
+@media only screen and (min-width: 768px) {
+	#projects h2 {
+		font-size: 3.5rem;
+	}
+}
+
 /***********************************************
 * CONTACT ME SECTION
 ************************************************/
